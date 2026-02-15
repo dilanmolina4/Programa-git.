@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img class="Logo" src="img/Logo de farmacia EL REMEDIO DEL SOL PNG GOD.png" alt="Logo de la app" width="264" height="264">
+<div class="contenido">
+<form onsubmit="validarRegistro(event)">
+    <select id="Usuario" name="Usuario">
+    <option value=""> Seleciona Usuario </option>
+    <option value="empleado">Empleado</option>
+    <option value="cliente">Cliente</option>
+    </select>
+<p><label for="documento">C.C. <input type="text" id="documento"></label></p>
+<p><label for="correo">Correo Electronico: <input type="email" id="correo"></label></p> 
+<p><label for="contraseña">Contraseña: <input type="password" id="contraseña"></label></p>
+<p>¿Olvidase tu contraseña?</p>
+<button type="submit"><a href="Home.html">Iniciar sesion</a></button>
+<p>¿No tienes cuenta? <a href="registro.html">¡Registrate!</a></p>
+</form>
+</div>
+    <script src="main.js"> </script>
+</body>
+</html>

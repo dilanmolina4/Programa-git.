@@ -1,0 +1,334 @@
+body{
+    background-image: url(img/Fondo_Inicio\ de\ sesion.png);
+ background-size: cover;
+    background-position: center;
+}
+.producto{
+     background-image: url(img/Fondo\ productos.png);
+ background-size: cover;
+    background-position: center;
+}
+.Home{
+     background-image: url(img/Fonfo\ home.png);
+ background-size:cover; 
+    background-position: center;
+}
+.citas{
+     background-image: url(img/Fondo\ citas.png);
+ background-size:cover; 
+    background-position: center;
+}
+h2{
+    color: #ffffff;
+}
+.Logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.contenido {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #73BEFF;
+    width: 85%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+label {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left; 
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="search"],
+select {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+
+    background: transparent;      
+    border: none;                
+    border-bottom: 2px solid #ffffff; 
+    outline: none;                
+    transition: 0.3s;
+}
+
+button {
+    width: 100%;
+    background-color: #FFD94B; 
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0c734;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    display: block;
+}
+.search-box {
+    width: 85%;
+    margin: 15px auto;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.25); 
+    border: 1px solid rgba(115, 190, 255, 0.4);
+    border-radius: 12px;
+
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    backdrop-filter: blur(8px); 
+}
+
+
+.search-box .icon {
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+.search-box input[type="search"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+
+.search-box input[type="search"]:focus {
+    color: #FFD94B; 
+}
+
+
+.search-box input[type="search"]::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+.saludo {
+    background-color: #FFD94B; 
+    width: 85%;
+    margin: 20px auto;
+    padding: 15px 20px;
+
+    border-radius: 12px; 
+    text-align: center;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.25); 
+}
+
+
+.saludo h1 {
+    margin: 0;
+    color: black; 
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+}
+.mp {
+    background-color: white;       
+    width: 85%;
+    margin: 20px auto;             
+    padding: 15px 20px;
+    border-radius: 12px;           
+
+    text-align: center;            
+    box-shadow: 0 0 10px rgba(0,0,0,0.15); 
+}
+
+.mp h1 {
+    margin: 0;
+    color: black;                  
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 700;              }
+    nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(0, 39, 79, 0.85);  
+    backdrop-filter: blur(8px);
+
+    padding: 10px 0;
+    border-top: 2px solid rgba(255,255,255,0.2);
+
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 15px;
+}
+
+
+nav ul li a:hover {
+    color: #FFD94B; 
+}
+
+
+nav ul li.active a {
+    color: #FFD94B;
+}
+
+nav ul li.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: -4px;
+    width: 40px;
+    height: 4px;
+    background-color: #FFD94B;
+    border-radius: 3px;
+}
+
+
+div[class*="Productos"] {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+
+div[class*="producto"] {
+    background: white;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+div[class*="producto"] img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px; 
+    margin-bottom: 10px;
+}
+
+
+div[class*="producto"] p {
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 8px;
+}
+
+
+.precio {
+    color: #0096FF;      
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.citas-box select,
+.citas-box input[type="date"],
+.citas-box input[type="time"] {
+    width: 100%;
+    background-color: white;      
+    color: black;                 
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+
+    border: none;                 
+    border-radius: 12px;         
+    padding: 12px 15px;          
+    margin-bottom: 15px;         
+    outline: none;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.15); 
+}
+
+
+.citas-box select option,
+.citas-box input::placeholder {
+    color: #666; 
+}
+.citas-box h2 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.citas-box button {
+    width: 100%;
+    background-color: #FFD94B;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.citas-box button:hover {
+    background-color: #e8c037;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="citas">
+    <img class="Logo" src="img/Logo de farmacia EL REMEDIO DEL SOL PNG GOD.png" alt="Logo de la app" width="264" height="264">
+    <div class="search-box">
+    <span class="icon">🔍</span>
+    <input type="search" placeholder="Buscar ahora..." name="busqueda">
+</div>
+    <div class="citas-box">
+    <h2>¡Agenda tu cita!</h2>
+    <form onsubmit="validarCita(event)">
+    <select id="tipo-de-cita">
+        <option value="Seleciona">Tipo de cita</option>
+        <option value="Consulta">Consulta</option>
+        <option value="Vacuna">Vacuna</option>
+        <option value="presion">Presion arterial</option>
+    </select>
+    <p><label for="fecha">Fecha: <input type="date" id="fecha"></label></p>
+    <p><label for="hora">Hora: <input type="time" id="hora">
+</label></p>
+    <button type="submit">Confirmar Cita</button>
+    </form>
+</div>
+
+      <nav>
+  <ul>
+    <li><a href="Home.html">Inicio</a></li>
+    <li><a href="productos.html">Productos</a></li>
+    <li class="active"><a href="citas.html">Citas</a></li>
+  </ul>
+</nav>
+<script src="main.js"></script>
+</body>
+</html>
